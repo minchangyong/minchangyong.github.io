@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>qts.onPageEvent() | 青团社H5开放文档</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="https://qiniu-image.qtshe.com/qtsf2e-logo.jpeg">
+    <meta name="description" content="青团社前端与客户端交互JS文件">
+    
+    <link rel="preload" href="/assets/css/0.styles.7a9c16db.css" as="style"><link rel="preload" href="/assets/js/app.1a3aa1f3.js" as="script"><link rel="preload" href="/assets/js/2.9d3e8606.js" as="script"><link rel="preload" href="/assets/js/9.a12529e9.js" as="script"><link rel="prefetch" href="/assets/js/10.bb5d20c2.js"><link rel="prefetch" href="/assets/js/11.eda12538.js"><link rel="prefetch" href="/assets/js/12.1b19f754.js"><link rel="prefetch" href="/assets/js/13.f3d453cb.js"><link rel="prefetch" href="/assets/js/14.997b5f01.js"><link rel="prefetch" href="/assets/js/15.5157d336.js"><link rel="prefetch" href="/assets/js/16.5a4cfa86.js"><link rel="prefetch" href="/assets/js/17.00baee33.js"><link rel="prefetch" href="/assets/js/18.760ecdee.js"><link rel="prefetch" href="/assets/js/19.d84fcdce.js"><link rel="prefetch" href="/assets/js/20.dd6e800b.js"><link rel="prefetch" href="/assets/js/21.b3b7caf7.js"><link rel="prefetch" href="/assets/js/22.c988df90.js"><link rel="prefetch" href="/assets/js/23.b9eeee84.js"><link rel="prefetch" href="/assets/js/24.67cd77d2.js"><link rel="prefetch" href="/assets/js/25.07eb9167.js"><link rel="prefetch" href="/assets/js/26.d08a037e.js"><link rel="prefetch" href="/assets/js/27.fbfa6e6c.js"><link rel="prefetch" href="/assets/js/28.f6c7fe04.js"><link rel="prefetch" href="/assets/js/29.619dfc6c.js"><link rel="prefetch" href="/assets/js/3.4ff24777.js"><link rel="prefetch" href="/assets/js/30.cfb6035f.js"><link rel="prefetch" href="/assets/js/31.9d0252fd.js"><link rel="prefetch" href="/assets/js/32.b1de361e.js"><link rel="prefetch" href="/assets/js/4.1eafe79c.js"><link rel="prefetch" href="/assets/js/5.1565ebce.js"><link rel="prefetch" href="/assets/js/6.2b7440ca.js"><link rel="prefetch" href="/assets/js/7.4b59a00c.js"><link rel="prefetch" href="/assets/js/8.b84093a1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7a9c16db.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">青团社H5开放文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端成员" class="dropdown-title"><span class="title">前端成员</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端成员" class="mobile-dropdown-title"><span class="title">前端成员</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  皓辰
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  迈克
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/minchangyong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  郝帅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  子默
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  坚果
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  十三
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  瀚森
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  夜神
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  大鹏
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端成员" class="dropdown-title"><span class="title">前端成员</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端成员" class="mobile-dropdown-title"><span class="title">前端成员</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  皓辰
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  迈克
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/minchangyong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  郝帅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  子默
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  坚果
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  十三
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  瀚森
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  夜神
+</a></li><li class="dropdown-item"><!----> <a href="/guide/introduction.html" class="nav-link">
+  大鹏
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/introduction.html" class="sidebar-link">简介</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开放接口</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>客户端埋点</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>通知中心</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/callJs.html" aria-current="page" class="active sidebar-link">callJS</a></li><li><a href="/guide/callNative.html" class="sidebar-link">callNative</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>万能跳转</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>分享</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>媒体</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>支付</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="qts-onpageevent"><a href="#qts-onpageevent" class="header-anchor">#</a> qts.onPageEvent()</h4> <div class="custom-block tip"><p class="custom-block-title">以 Promise 风格 调用：</p> <p>支持</p></div> <h4 id="功能描述"><a href="#功能描述" class="header-anchor">#</a> 功能描述</h4> <h5 id="h5监听客户端通知-当客户端触发以下类型通知时会通知给h5"><a href="#h5监听客户端通知-当客户端触发以下类型通知时会通知给h5" class="header-anchor">#</a> h5监听客户端通知，当客户端触发以下类型通知时会通知给h5</h5> <h4 id="返回参数"><a href="#返回参数" class="header-anchor">#</a> 返回参数</h4> <table><thead><tr><th>属性</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>eventName</td> <td>String</td> <td>方法名</td></tr> <tr><td>eventParams</td> <td>Object</td> <td>方法所需的参数</td></tr></tbody></table> <h4 id="eventname枚举"><a href="#eventname枚举" class="header-anchor">#</a> eventName枚举</h4> <table><thead><tr><th>属性</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>login</td> <td>String</td> <td>登录成功</td></tr> <tr><td>logout</td> <td>String</td> <td>退出登录</td></tr> <tr><td>onBackground</td> <td>String</td> <td>(Android不支持) APP进入后台</td></tr> <tr><td>onForground</td> <td>String</td> <td>(Android不支持)  APP进入前台</td></tr> <tr><td>onPageHide</td> <td>String</td> <td>页面消失</td></tr> <tr><td>onPageShow</td> <td>String</td> <td>页面显示</td></tr> <tr><td>partJobShareSuccess</td> <td>String</td> <td>兼职分享成功</td></tr> <tr><td>apply_partJob_success_notification</td> <td>String</td> <td>兼职报名成功</td></tr> <tr><td>easyTaskShareSuccess</td> <td>String</td> <td>小任务分享成功</td></tr> <tr><td>easyTaskApplySuccess</td> <td>String</td> <td>小任务领取成功</td></tr> <tr><td>userResumeInfoDidChange</td> <td>String</td> <td>用户简历信息发生变化</td></tr> <tr><td>realNameAuthSuccess</td> <td>String</td> <td>实名认证成功</td></tr></tbody></table> <h4 id="示例代码"><a href="#示例代码" class="header-anchor">#</a> 示例代码</h4> <div class="language-js extra-class"><pre class="language-js"><code>qts<span class="token punctuation">.</span><span class="token function">onPageEvent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>fnName<span class="token punctuation">)</span> <span class="token comment">// 'notificationCenter'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">2023-02-06:</span> <span class="time">3/20/2023, 11:20:13 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/getAppTrackInfo.html" class="prev">
+        获取客户端埋点数据
+      </a></span> <span class="next"><a href="/guide/callNative.html">
+        callNative
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1a3aa1f3.js" defer></script><script src="/assets/js/2.9d3e8606.js" defer></script><script src="/assets/js/9.a12529e9.js" defer></script>
+  </body>
+</html>
